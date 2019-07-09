@@ -1,11 +1,3 @@
-<?php
-    $data=file_get_contents('data/pizza.json');
-    $menu=json_decode($data,true);
-
-    $menu = $menu["menu"];
-
-?>
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -49,11 +41,7 @@
 
         <!-- card -->
         <div class="row" id="daftar-menu">
-            <?php foreach ($menu as $row) :
-                ?>
             
-            <?php
-            endforeach; ?>
         </div>
         <!-- akhir card -->
     </div>
